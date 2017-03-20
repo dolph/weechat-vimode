@@ -37,7 +37,7 @@ import weechat
 # Script info.
 # ============
 
-SCRIPT_NAME = "vimode"
+SCRIPT_NAME = "dolph-vimode"
 SCRIPT_AUTHOR = "GermainZ <germanosz@gmail.com>"
 SCRIPT_VERSION = "0.5"
 SCRIPT_LICENSE = "GPL3"
@@ -51,7 +51,7 @@ SCRIPT_DESC = ("Add vi/vim-like modes and keybindings to WeeChat.")
 # --------
 
 # Halp! Halp! Halp!
-GITHUB_BASE = "https://github.com/GermainZ/weechat-vimode/blob/master/"
+GITHUB_BASE = "https://github.com/dolph/weechat-vimode/blob/master/"
 README_URL = GITHUB_BASE + "README.md"
 FAQ_KEYBINDINGS = GITHUB_BASE + "FAQ.md#problematic-key-bindings"
 FAQ_ESC = GITHUB_BASE + "FAQ.md#esc-key-not-being-detected-instantly"
@@ -108,8 +108,8 @@ VI_COMMANDS = {'h': "/help",
                'q': "/close",
                'w': "/save",
                'set': "/set",
-               'bp': "/buffer -1",
-               'bn': "/buffer +1",
+               'bp': "/buffer +1",
+               'bn': "/buffer -1",
                'bd': "/close",
                'b#': "/input jump_last_buffer_displayed",
                'b': "/buffer",
